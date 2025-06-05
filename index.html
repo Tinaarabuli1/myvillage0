@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>სოფელი</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ნავიგაცია -->
+  <nav class="navbar" id="navbar">
+    <div class="logo">სოფელი</div>
+    <ul class="nav-links">
+      <li><a href="index.html">მთავარი</a></li>
+      <li><a href="market.html">ბაზარი</a></li>
+      <li><a href="events.html">ღონისძიებები</a></li>
+      <li><a href="schedule.html">განრიგი</a></li>
+      <li><a href="contact.html">კონტაქტი</a></li>
+    </ul>
+    <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+      &#9776;
+    </a>
+  </nav>
+
+  <!-- ბანერი -->
+  <header class="hero">
+    <div class="hero-text">
+      <h1>მოგესალმებით სოფელში</h1>
+      <p>სადაც ტრადიციები, სისუფთავე და სტუმართმოყვარეობა ერთად ცხოვრობენ</p>
+      <a href="events.html" class="btn">იხილე ღონისძიებები</a>
+    </div>
+  </header>
+
+  <!-- ღონისძიებების ქარდები -->
+  <section class="cards-section">
+    <h2>დაგეგმილი ღონისძიებები</h2>
+    <div class="cards-container">
+      <article class="card">
+        <img src="images/festival.jpg" alt="სოფლის ფესტივალი" />
+        <h3>სოფლის ფესტივალი</h3>
+        <p>ფესტივალი გაიმართება 15 ივნისს სოფლის ცენტრალურ მოედანზე.</p>
+        <a href="event-details.html" class="card-link">დაწვრილებით</a>
+      </article>
+
+      <article class="card">
+        <img src="images/market.jpg" alt="ბაზრის დღე" />
+        <h3>ბაზრის დღე</h3>
+        <p>ყიდვა-გაყიდვის ბაზარი ყოველ შაბათ-კვირას 10:00-დან 17:00-მდე.</p>
+        <a href="market.html" class="card-link">დაწვრილებით</a>
+      </article>
+
+      <article class="card">
+        <img src="images/schedule.jpg" alt="განრიგის პრეზენტაცია" />
+        <h3>განრიგის პრეზენტაცია</h3>
+        <p>ახალი სასწავლო წლის განრიგის წარმოდგენა 1 სექტემბერს.</p>
+        <a href="schedule.html" class="card-link">დაწვრილებით</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ფუტერი -->
+  <footer class="footer">
+    <p>&copy; 2025 სოფელი სოფი | ყველა უფლება დაცულია</p>
+  </footer>
+
+  <script>
+    function toggleNavbar() {
+      var navbar = document.getElementById("navbar");
+      navbar.classList.toggle("responsive");
+    }
+  </script>
+
+</body>
+</html>
